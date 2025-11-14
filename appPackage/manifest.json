@@ -1,0 +1,77 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.23/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.23",
+    "version": "1.0.1",
+    "id": "${{TEAMS_APP_ID}}",
+    "developer": {
+        "name": "Scott Adams, Microsoft",
+        "websiteUrl": "https://www.microsoft.com",
+        "privacyUrl": "https://www.microsoft.com/privacy",
+        "termsOfUseUrl": "https://www.microsoft.com/termofuse"
+    },
+    "icons": {
+        "color": "databricks192.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "M365 Databricks Agent",
+        "full": "full name for Databricks CEA"
+    },
+    "description": {
+        "short": "short description for Databricks CEA",
+        "full": "full description for Databricks CEA"
+    },
+    "accentColor": "#FFFFFF",
+    "copilotAgents": {
+        "customEngineAgents": [
+            {
+                "type": "bot",
+                "id": "${{BOT_ID}}"
+            }
+        ]
+    },
+    "bots": [
+        {
+            "botId": "${{BOT_ID}}",
+            "scopes": [
+                "copilot",
+                "personal",
+                "team"
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false,
+            "commandLists": [
+                {
+                    "scopes": [
+                        "copilot",
+                        "personal"
+                    ],
+                    "commands": [
+                        {
+                            "title": "Distance",
+                            "description": "What is the distance between New York and San Francisco?"
+                        },
+                        {
+                            "title": "Medalia",
+                            "description": "Get me the top 10 rows from medialia comments"
+                        },
+                        {
+                            "title": "Random",
+                            "description": "What is a tree frog?"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "composeExtensions": [],
+    "configurableTabs": [],
+    "staticTabs": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "${{BOT_DOMAIN}}"
+    ]
+}

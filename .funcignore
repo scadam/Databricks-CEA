@@ -1,0 +1,15 @@
+# Files and folders excluded from Azure Functions deployments
+.git*
+.vscode/
+.github/
+__pycache__/
+.venv/
+.env/
+infra/
+appPackage/
+tests/
+README.md
+m365agents*.yml
+local.settings.json
+local.settings.sample.json
+env/

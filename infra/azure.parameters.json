@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "resourceBaseName": {
+      "value": "bot${{RESOURCE_SUFFIX}}"
+    },
+    "databricksToken": {
+      "value": "${{SECRET_DATABRICKS_TOKEN}}"
+    },
+    "databricksBaseUrl": {
+      "value": "${{DATABRICKS_BASE_URL}}"
+    },
+    "databricksModelName": {
+      "value": "${{DATABRICKS_MODEL_NAME}}"
+    },
+    "functionPlanSku": {
+      "value": "Y1"
+    },
+    "botDisplayName": {
+      "value": "Databricks CEA"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "MicrosoftAppId": "00000000-0000-0000-0000-000000000000",
+    "MicrosoftAppType": "MultiTenant",
+    "MicrosoftAppTenantId": "00000000-0000-0000-0000-000000000000",
+    "MicrosoftAppPassword": "<bot-secret-if-using-password-flow>",
+    "DATABRICKS_TOKEN": "<token>",
+    "DATABRICKS_BASE_URL": "https://adb-4270485089207270.10.azuredatabricks.net/serving-endpoints",
+    "DATABRICKS_MODEL_NAME": "databricks-gpt-oss-120b",
+    "SYSTEM_PROMPT": "You are an AI assistant that uses Databricks models to help Microsoft 365 users.",
+    "OPENAI_MAX_TOKENS": "1024",
+    "OPENAI_TEMPERATURE": "0.2"
+  }
+}
